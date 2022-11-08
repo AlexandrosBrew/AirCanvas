@@ -1,7 +1,8 @@
 # AirCanvas
 
 Libraries needed:
-  - Tensorflow (Tensorflow keras models as well)
+  - Tensorflow
+  - Keras-Models
   - Mediapipe
   - OpenCV2
   - Numpy
