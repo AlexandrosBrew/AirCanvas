@@ -5,7 +5,8 @@ import tensorflow as tf
 from tensorflow.keras import models
 from tensorflow.keras.models import load_model
 from HandTrackingModule import handDetector
-
+import os
+cdir = os.getcwd()
 class GestureTracking():
     def __init__(self):
         self.mpHands = mp.solutions.hands
@@ -13,8 +14,8 @@ class GestureTracking():
         self.mpDraw = mp.solutions.drawing_utils
 
     def getModel(self):
-        self.model = load_model('/Users/alexandrosbrew/Documents/PersonalProgramming/Tracking/HandGesture/mp_hand_gesture')
-        self.f = open('/Users/alexandrosbrew/Documents/PersonalProgramming/Tracking/HandGesture/gesture.names', 'r')
+        self.model = load_model(cdir+'/HandGesture/mp_hand_gesture')
+        self.f = open(cdir+'/HandGesture/gesture.names', 'r')
         self.classNames = self.f.read().split('\n')
         return self.model, self.f, self.classNames
     
