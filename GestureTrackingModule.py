@@ -2,8 +2,8 @@ import cv2
 import mediapipe as mp
 import numpy as np
 import tensorflow as tf
-from tensorflow.keras import models
-from tensorflow.keras.models import load_model
+from keras import models #!If doesnt work change to tensorflow.keras
+from keras.models import load_model #!If doesnt work change to tensorflow.keras.models
 from HandTrackingModule import handDetector
 import os
 cdir = os.getcwd()
