@@ -1,5 +1,5 @@
 # AirCanvas
 
 Libraries needed:
-  - Tensorflow
+  - Tensorflow (Tensorflow keras models as well)
   - Mediapipe
