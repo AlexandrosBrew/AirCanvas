@@ -1,6 +1,6 @@
 # AirCanvas
 
-Execute the file AirCanvas.py (HandTracking>AirCanvas.py) to run the program
+Execute the file AirCanvas.py to run the program
 
 Libraries needed:
   - Tensorflow
